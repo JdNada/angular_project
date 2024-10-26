@@ -4,17 +4,17 @@
   margin: 20px auto;
   padding: 10px 30px;
   box-shadow: lightgray 4px 4px 20px;
-  img{
-    width:100%;
+  img {
+    width: 100%;
   }
-  h2{
-    margin-bottom:0;
+  h2 {
+    margin-bottom: 0;
   }
-  p{
+  p {
     font-weight: 300;
     font-size: 16px;
   }
-  button{
+  button {
     background-color: transparent;
     box-sizing: border-box;
     padding: 5px 10px;
@@ -30,14 +30,14 @@
     }
   }
 }
-.snapped{
+.snapped {
   background-color: rgba(lightgray, 0.4);
   color: darkgreen;
-  // button{
-  //   box-shadow: lightgreen 3px 3px 7px;
-  //   color: darkgreen;
-  //   &:active{
-  //     box-shadow: lightgreen 0 0 5px;
-  //   }
-  // }
+}
+button {
+  box-shadow: lightgreen 3px 3px 7px;
+  color: darkgreen;
+  &:active {
+    box-shadow: lightgreen 0 0 5px;
+  }
 }

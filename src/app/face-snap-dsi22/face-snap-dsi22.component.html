@@ -2,15 +2,18 @@
 <p>Mis en ligne le {{ createDate }}</p>
 <img [src]="imageUrl" [alt]="title" />
 <p>{{ description }}</p>
-<p> ☼ {{ snaps }}</p>
+<p>☼ {{ snaps }}</p>
 <button (click)="onAddSnap()">Oh Snap !</button>
-<div class="face-snap-card" [ngClass]="{snapped: buttonText === 'Oops, unSnap!' }">
+<div
+  class="face-snap-card"
+  [ngClass]="{ snapped: buttonText === 'Oops, unSnap!' }"
+>
   <h2>{{ faceSnap.title }}</h2>
-  <p>Mis en ligne le {{faceSnap.createdDate}}</p>
-  <img [src]="faceSnap.imageUrl" [alt]="faceSnap.title">
-  <p>{{faceSnap.description}}</p>
+  <p>Mis en ligne le {{ faceSnap.createdDate }}</p>
+  <img [src]="faceSnap.imageUrl" [alt]="faceSnap.title" />
+  <p>{{ faceSnap.description }}</p>
   <p>
-    <button (click)="onSnap()">{{buttonText}}</button>
-    {{faceSnap.snaps}}
+    <button (click)="onSnap()">{{ buttonText }}</button>
+    {{ faceSnap.snaps }}
   </p>
 </div>
